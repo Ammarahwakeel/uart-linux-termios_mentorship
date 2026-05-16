@@ -345,3 +345,10 @@ MIT — free to use, modify, and distribute.
 ## Author
 
 Ammarah Wakeel, LFX Mentorship Applicant, RISC-V ACT Framework Enablement and M-Mode Firmware Validation on Hardware Board
+
+---
+
+## Acknowlegement
+
+I implemented this solution myself. I have worked with UART in embedded contexts on Tiva C, but the Linux termios API was new territory for me, so I used an LLM ( claude sonnet 4.6 ) at points to quickly look up specific flag meanings and API behaviour rather than spending time digging through man pages for every detail. The structure, the non-blocking I/O logic using select(), the error handling flow, and the overall design decisions are mine.
+I am mentioning this because I think being upfront about tool use is the right thing to do, and honestly because in real firmware debugging on hardware like the Milk-V Jupiter, understanding what your code actually does matters more than where you first read about it. I made sure I understood every line before submitting.
